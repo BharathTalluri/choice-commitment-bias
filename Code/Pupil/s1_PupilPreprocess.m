@@ -30,7 +30,7 @@ cd(sprintf('%s/P%02d', raw_pupil_dir, sj));
 files = dir(sprintf('P%d_s*.asc', sj));
 
 for file = 1:length(files)
-    scandat     = sscanf(files(file).name, 'P%*d_s%d_b%d_%*d.asc');
+    scandat     = sscanf(files(file).name, 'P%*d_s%d_b%d.asc');
     session     = scandat(1); block = scandat(2);
     mkdir(sprintf('%s/P%02d', preproc_pupil_dir, sj));
     
@@ -45,9 +45,9 @@ for file = 1:length(files)
     [data, event, blinksmp, saccsmp] = asc2dat(asc);
     
     % fix some files where two events were sent at exactly the same sample
-    if strfind('P7_s2_b1_2015-01-22_17-07-29.asc', files(file).name)
+    if strfind('P7_s2_b1.asc', files(file).name)
         event = event([1:253 255 254 256:end]);
-    elseif strfind('P14_s6_b5_2015-02-04_13-50-03.asc', files(file).name)
+    elseif strfind('P14_s6_b5.asc', files(file).name)
         event = event([1:471 473 472 474:end]);
     end
     
