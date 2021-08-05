@@ -7,7 +7,7 @@ Numerical task: https://datadryad.org/resource/doi:10.5061/dryad.40f6v <br/>
 Raw pupil data from Perceptual task: https://doi.org/10.6084/m9.figshare.14039294 <br/>
 
 If you use the data or the code, please cite:
-Talluri, B. C., Urai, A. E., Bronfman, Z. Z., Brezis, N., Tsetsos, K., Usher, M., Donner, T. H. (2021) Choices change the temporal weighting of decision evidence. Journal of Neurophysiology.
+Talluri, B. C., Urai, A. E., Bronfman, Z. Z., Brezis, N., Tsetsos, K., Usher, M., Donner, T. H. (2021). Choices change the temporal weighting of decision evidence. Journal of Neurophysiology. 125(4), 1468-1481.
 
 The repository is organized into the following folders:
 1. Data: Contains behavior data (both raw, and analysis-ready) from both perceptual and numerical tasks, and preprocessed pupil data from perceptual task. In addition, matlab scripts that give the analysis-ready data files from the raw data files are provided. All behavior data files are in csv format, and preprocessed pupil data files are in .mat format.
